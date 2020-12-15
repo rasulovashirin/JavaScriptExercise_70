@@ -3,13 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Bootstrap starter</title>
+    <title>Sonni toping JS5</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <div class="container text-center">Lorem ipsum dolor sit amet.</div>
+
+    <section class="game">
+        <div class="container">
+            <h4>Kompyuter o'ylagan sonni topish</h4>
+
+            <form class="game__form" action="https://echo.htmlacademy.ru" method="POST">
+                <label for="number-input">
+                    <span>1 dan 100 gacha son kiriting</span>
+                    <input class="game__input" type="number" id="number-input" name="number-input" >
+                </label>
+                <button class="game__button" type="submit">Tekshirish</button>
+            </form>
+
+            <div>
+                Urinishlar soni
+                <span class="game__hearts">6</span>
+            </div>
+            <div>
+                Siz kiritgan son
+                <span class="game__entered"></span>
+            </div>
+
+            <div class="game__help"></div>
+        </div>
+
+    </section>
+
 
 
     <script src="js/jquery-3.5.1.min.js"></script>
